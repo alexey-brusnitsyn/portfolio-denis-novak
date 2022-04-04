@@ -1,0 +1,197 @@
+/* задание глобальных переменных */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --invert-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --background: #2f303a;
+  --background-section: #f5f4fa;
+}
+
+body {
+  font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+a {
+  /* убирает подчеркивание ссылок */
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+li {
+  /* Убираем маркеры */
+  list-style-type: none;
+}
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+.hidden {
+  display: none;
+}
+
+/* site logo */
+.logo {
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-text-color);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+.logo > span {
+  color: var(--accent-color);
+}
+
+/* nave menu */
+.main-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+/* цвет наведение на меню  */
+.main-nav .link:hover,
+.main-nav .link:focus {
+  color: var(--accent-color);
+}
+/* цвет меню текущей страницы */
+.main-nav .link.current {
+  color: var(--accent-color);
+}
+
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.header-contact a:hover {
+  color: var(--accent-color);
+}
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--invert-text-color);
+  background-color: var(--secondary-text-color);
+}
+.main-btn {
+  font-size: 16px;
+  line-height: 1, 87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--invert-text-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.features h3 {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--secondary-text-color);
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.team p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.team h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+footer {
+  background: var(--background);
+}
+.logo-footer {
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--invert-text-color);
+}
+
+.logo-footer > span {
+  color: var(--accent-color);
+}
+
+footer > a > address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--invert-text-color);
+}
+footer > ul > li > a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer a:hover {
+  color: var(--accent-color);
+}
+
+/* Страница примеры работ */
+.work-exls-nav button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.work-exls-nav button:hover {
+  color: var(--invert-text-color);
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.work-project > ul > li > h3 {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.work-project > ul > li > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
+}
